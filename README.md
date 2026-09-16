@@ -1,3 +1,6 @@
 # BICC Korea
 
-Korean information site for Birmingham International Collegiate of Canada (BICC), managed by TNS Worldwide.
+Production source for the Korean-language BICC information site managed by TNS Worldwide.
+
+- Production target: https://bicc-korea.netlify.app/
+- Static site; Netlify publish directory: repository root (`.`)

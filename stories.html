@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>BICC 학생 후기 아카이브</title>
+<style>
+:root{--navy:#0b1f33;--ink:#18222d;--muted:#687483;--line:#e5e9ee;--soft:#f5f7f9;--blue:#1687b8;--max:1140px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Pretendard,"Noto Sans KR",system-ui,-apple-system,sans-serif;color:var(--ink);background:white;line-height:1.72}
+a{color:inherit}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.head-in{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:850;text-decoration:none;letter-spacing:-.02em}.brand span{color:var(--blue)}
+.nav{display:flex;gap:18px;align-items:center}.nav a{text-decoration:none;font-size:14px}.nav .home{padding:9px 14px;border:1px solid var(--line);border-radius:999px}
+.hero{padding:72px 0 42px;background:linear-gradient(180deg,#f7fafc 0,#fff 100%)}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}
+h1{margin:12px 0 14px;font-size:clamp(34px,5vw,64px);line-height:1.08;letter-spacing:-.045em}h2{letter-spacing:-.03em}.lead{max-width:820px;color:#485766;font-size:17px}
+.note{font-size:14px;color:var(--muted)}.section{padding:44px 0 80px}.toolbar{margin:18px 0 10px}.toolbar input{width:100%;height:52px;border:1px solid #d8dee5;border-radius:12px;padding:0 16px;font:inherit;background:white}.search-help{margin:10px 2px 28px;font-size:13px;color:var(--muted);line-height:1.65}.search-help strong{color:#455563}.count{font-size:14px;color:var(--muted);margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{border:1px solid var(--line);border-radius:16px;padding:22px;background:#fff;display:flex;flex-direction:column;min-height:300px}
+.card .meta{font-size:12px;font-weight:800;color:var(--blue);letter-spacing:.04em}.card h3{font-size:22px;line-height:1.25;margin:9px 0 12px;letter-spacing:-.025em}.dest-label{font-size:11px;font-weight:800;color:#84909b;text-transform:uppercase;letter-spacing:.06em}.dest{font-size:14px;color:#394b5a;margin:2px 0 12px}.excerpt{font-size:14px;color:#596775;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}.read{margin-top:auto;padding-top:18px;font-weight:800;text-decoration:none;color:#0b6f9c}
+.empty{padding:60px 0;text-align:center;color:var(--muted)}footer{border-top:1px solid var(--line);padding:28px 0 48px;color:#7a8792;font-size:12px}
+@media(max-width:860px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav a:not(.home){display:none}}
+@media(max-width:620px){.wrap{width:min(100% - 24px,var(--max))}.hero{padding:48px 0 28px}.grid{grid-template-columns:1fr}.card{min-height:0}.head-in{height:64px}h1{font-size:38px}.section{padding-top:30px}.search-help{font-size:12px}}
+</style>
+<style>
+.story-video-section{margin-top:72px;padding-top:54px;border-top:1px solid var(--line)}
+.story-video-head{max-width:760px;margin-bottom:24px}.story-video-head h2{font-size:clamp(26px,4vw,42px);line-height:1.2;margin:6px 0 10px}.story-video-head p{margin:0;color:#596775}
+.story-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.story-video-card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}.story-video-frame{position:relative;aspect-ratio:16/9;background:#071526}.story-video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.story-video-label{padding:14px 16px;font-size:14px;font-weight:800;color:#2d3a45}
+@media(max-width:860px){.story-video-grid{grid-template-columns:1fr}.story-video-section{margin-top:54px;padding-top:40px}}
+</style><style data-bicc-featured-2026="1">.featured-2026{margin:0 0 34px;padding:24px;border:1px solid #dfe7ec;border-radius:18px;background:#f8fbfd}.featured-2026-head{margin-bottom:16px}.featured-2026-head h2{margin:5px 0 7px;font-size:26px}.featured-2026-head p{margin:0;color:#657483;font-size:13px}.featured-2026-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.featured-2026-card{display:flex;flex-direction:column;padding:17px;border:1px solid #e0e7eb;border-radius:13px;background:#fff;text-decoration:none}.featured-2026-badge{font-size:10px;font-weight:900;color:#0b6f9c}.featured-2026-card h3{margin:7px 0 5px;font-size:18px}.featured-2026-dest{font-size:13px;font-weight:800;color:#2c4355}.featured-2026-route{margin:9px 0 13px;color:#687784;font-size:12px;line-height:1.6}.featured-2026-more{margin-top:auto;color:#0b6f9c;font-size:12px;font-weight:900}@media(max-width:760px){.featured-2026{padding:18px}.featured-2026-grid{grid-template-columns:1fr}}</style>
+<style data-bicc-global-menu="2">
+html.bicc-menu-open,html.bicc-menu-open body{overflow:hidden!important}
+header{position:relative}
+header>nav,.headnav,.nav{display:none!important}
+header button:not(#biccGlobalMenuToggle),header [class*="hamburger" i]:not(#biccGlobalMenuToggle),header [class*="menu-toggle" i]:not(#biccGlobalMenuToggle),header [aria-label*="menu" i]:not(#biccGlobalMenuToggle),header [aria-label*="메뉴"]:not(#biccGlobalMenuToggle){display:none!important}
+#biccGlobalMenuToggle{position:absolute!important;right:18px!important;top:50%!important;transform:translateY(-50%)!important;z-index:10020!important;width:48px!important;height:48px!important;border:0!important;border-radius:12px!important;background:transparent!important;color:#0b2239!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:5px!important;cursor:pointer!important;padding:0!important;box-shadow:none!important}
+#biccGlobalMenuToggle span{display:block;width:28px;height:2px;border-radius:3px;background:currentColor;transition:transform .22s ease,opacity .22s ease}
+html.bicc-menu-open #biccGlobalMenuToggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+html.bicc-menu-open #biccGlobalMenuToggle span:nth-child(2){opacity:0}
+html.bicc-menu-open #biccGlobalMenuToggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+#biccGlobalMenuShade{position:fixed;inset:0;background:rgba(3,15,28,.4);backdrop-filter:blur(2px);z-index:10000;opacity:0;pointer-events:none;transition:opacity .22s ease}
+#biccGlobalMenu{position:fixed;top:76px;right:24px;width:min(1040px,calc(100vw - 48px));max-height:calc(100dvh - 100px);overflow:auto;background:#fff;z-index:10010;opacity:0;transform:translateY(-10px) scale(.985);transform-origin:top right;pointer-events:none;transition:opacity .2s ease,transform .22s ease;box-shadow:0 24px 70px rgba(7,31,56,.2);border:1px solid #e1e7eb;border-radius:18px;color:#17222d}
+html.bicc-menu-open #biccGlobalMenuShade{opacity:1;pointer-events:auto}
+html.bicc-menu-open #biccGlobalMenu{opacity:1;transform:none;pointer-events:auto}
+.bicc-menu-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;padding:26px 30px 22px;border-bottom:1px solid #dfe5e9}.bicc-menu-kicker{font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#177eaa}.bicc-menu-title{margin:4px 0 0;font-size:27px;font-weight:950;letter-spacing:-.045em;color:#0a3158}.bicc-menu-home{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#0a3158;font-size:14px;font-weight:900;padding:9px 13px;border:1px solid #cad5dc;border-radius:999px;background:#fff}.bicc-menu-home.active{background:#0a3158;color:#fff;border-color:#0a3158}
+.bicc-menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 42px;padding:20px 30px 30px}.bicc-menu-group{padding:18px 4px 16px;border-bottom:1px solid #e3e7ea}.bicc-menu-group-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding-bottom:10px;border-bottom:3px solid #12253a}.bicc-menu-group h3{margin:0;font-size:20px;letter-spacing:-.035em;color:#17222d}.bicc-menu-mainlink{font-size:12px;font-weight:850;color:#8b2e2e;text-decoration:none;white-space:nowrap}.bicc-menu-mainlink:hover{text-decoration:underline;text-underline-offset:3px}.bicc-menu-sub{display:block;padding:12px 3px 10px;text-decoration:none;color:#5f6872;font-size:15px;border-bottom:1px solid #e6e8ea}.bicc-menu-sub:hover{color:#0a3158;background:#f8fafb}.bicc-menu-sub.active{color:#0a3158;font-weight:900}.bicc-menu-empty{padding:12px 3px 2px;color:#9aa2aa;font-size:13px}.bicc-menu-foot{padding:16px 30px 22px;border-top:1px solid #edf0f2;font-size:11px;color:#8a959f}
+@media(max-width:760px){#biccGlobalMenuToggle{right:10px!important;width:44px!important;height:44px!important}#biccGlobalMenu{top:0;right:0;width:min(420px,calc(100vw - 18px));height:100dvh;max-height:none;border-radius:0;transform:translateX(102%);opacity:1}.bicc-menu-open #biccGlobalMenu{transform:translateX(0)}.bicc-menu-head{padding:74px 20px 18px;align-items:flex-start;flex-direction:column}.bicc-menu-title{font-size:24px}.bicc-menu-grid{grid-template-columns:1fr;padding:8px 18px 24px;gap:0}.bicc-menu-group{padding:15px 0 12px}.bicc-menu-group h3{font-size:18px}.bicc-menu-sub{font-size:14px}.bicc-menu-foot{padding:16px 20px 24px}}
+</style>
+<style data-bicc-unified-brand="1">
+.bicc-unified-brand{display:inline-flex!important;align-items:center!important;gap:5px!important;text-decoration:none!important;white-space:nowrap!important;font-size:20px!important;font-weight:950!important;line-height:1!important;letter-spacing:-.035em!important;color:#13263b!important;flex:0 0 auto!important}
+.bicc-unified-brand span{color:#177eaa!important;font-weight:950!important}
+@media(max-width:620px){.bicc-unified-brand{font-size:19px!important}}
+</style>
+<style data-bicc-tns-footer="1">
+.bicc-tns-footer{background:#0b1f33!important;color:#fff!important;border-top:0!important;padding:34px 0 38px!important;font-size:13px!important;line-height:1.75!important}
+.bicc-tns-footer a{color:inherit;text-decoration:none}.bicc-tns-footer a:hover{text-decoration:underline;text-underline-offset:3px}
+.bicc-tns-footer-wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+.bicc-tns-footer-top{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:28px;align-items:start}
+.bicc-tns-footer-brand strong{display:block;font-size:18px;letter-spacing:-.025em;margin-bottom:8px;color:#fff}.bicc-tns-footer-brand p{margin:0;color:#aebdca;font-size:12px}
+.bicc-tns-footer-block strong{display:block;margin-bottom:6px;font-size:13px;color:#fff}.bicc-tns-footer-block div{color:#c2ced8;font-size:12px}.bicc-tns-footer-block a{color:#dbe6ee}
+.bicc-tns-footer-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.bicc-tns-footer-chip{display:inline-flex;align-items:center;padding:7px 10px;border:1px solid rgba(255,255,255,.16);border-radius:999px;background:rgba(255,255,255,.05);font-size:11px;font-weight:800;color:#fff!important;text-decoration:none!important}
+.bicc-tns-footer-bottom{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:24px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);color:#8496a6;font-size:10px}
+@media(max-width:760px){.bicc-tns-footer{padding:28px 0 32px!important}.bicc-tns-footer-wrap{width:calc(100% - 28px)}.bicc-tns-footer-top{grid-template-columns:1fr;gap:20px}.bicc-tns-footer-bottom{display:block}.bicc-tns-footer-bottom span{display:block;margin-top:4px}}
+</style>
+<style data-bicc-v3-navigation="1">
+@media(max-width:1079px){html body header .wrap .bicc-desktop-nav{display:none!important}}
+@media(min-width:1080px){
+ header{min-height:76px}html body header .wrap .bicc-desktop-nav{display:flex!important;align-items:center;gap:19px;margin-left:auto;margin-right:62px}
+ .bicc-desktop-nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none!important;color:#183047!important;font-size:13px!important;font-weight:850!important;white-space:nowrap;border-bottom:2px solid transparent}
+ .bicc-desktop-nav a:hover,.bicc-desktop-nav a.active{color:#0a3158!important;border-color:#177eaa}
+ .bicc-desktop-nav a.consult{padding:9px 15px;min-height:auto;border:0;border-radius:999px;background:#0a3158;color:#fff!important}
+ #biccGlobalMenuToggle{right:20px!important}
+}
+</style><style data-bicc-subpage-scroll-bar-fix="1">
+/* Let the page header scroll away, then keep only the local section bar pinned to the very top. */
+header,
+.site-header{
+  position:relative!important;
+  top:auto!important;
+}
+.subnav,
+.anchorbar,
+.yearnav{
+  position:sticky!important;
+  top:0!important;
+  z-index:40!important;
+  background:rgba(255,255,255,.98)!important;
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  box-shadow:0 1px 0 rgba(18,35,50,.08);
+}
+.subject,
+.section,
+.year{
+  scroll-margin-top:72px!important;
+}
+</style>
+<style data-bicc-subpage-bottom-spacing="1">
+/* Remove stacked bottom spacing between the last content area and CTA/footer. */
+main{
+  padding-bottom:0!important;
+  margin-bottom:0!important;
+}
+main > section:last-child,
+main > .section:last-child,
+main > .year:last-child,
+main > .bicc-assessment-update:last-child{
+  margin-bottom:0!important;
+}
+main + .cta,
+.cta{
+  padding-top:24px!important;
+  padding-bottom:36px!important;
+  margin-top:0!important;
+}
+main + footer,
+main ~ footer{
+  margin-top:0!important;
+}
+@media(max-width:820px){
+  main + .cta,.cta{padding-top:18px!important;padding-bottom:30px!important}
+}
+@media(max-width:560px){
+  main + .cta,.cta{padding-top:12px!important;padding-bottom:24px!important}
+}
+</style>
+<style data-bicc-v4-parent-journey="1">
+.bicc-page-updated{width:min(1120px,calc(100% - 36px));margin:18px auto 0;display:flex;align-items:center;gap:7px;color:#768491;font-size:11px;line-height:1.4}
+.bicc-page-updated b{color:#4c6071;font-weight:850}
+@media(max-width:620px){.bicc-page-updated{width:calc(100% - 28px);margin-top:14px}}
+</style>
+<style data-bicc-v5-stories="1">
+.story-video-section{margin-top:34px!important;padding-top:34px!important}
+.bicc-video-written-cases{margin:18px 0 38px;padding:22px;border:1px solid #dfe7ec;border-radius:18px;background:#f8fbfd}
+.bicc-video-written-head{max-width:780px;margin-bottom:16px}.bicc-video-written-head h2{margin:5px 0 7px;font-size:clamp(24px,3.5vw,34px);line-height:1.2;letter-spacing:-.035em}.bicc-video-written-head p{margin:0;color:#657483;font-size:13px}
+.bicc-video-written-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.bicc-video-written-grid a{display:flex;flex-direction:column;min-height:136px;padding:17px;border:1px solid #e0e7eb;border-radius:13px;background:#fff;text-decoration:none}.bicc-video-written-grid strong{font-size:17px;color:#173b58}.bicc-video-written-grid span{margin-top:5px;color:#586b7b;font-size:12px;line-height:1.55}.bicc-video-written-grid em{margin-top:auto;padding-top:14px;color:#0b6f9c;font-size:12px;font-style:normal;font-weight:900}
+@media(max-width:760px){.bicc-video-written-cases{padding:18px}.bicc-video-written-grid{grid-template-columns:1fr}.bicc-video-written-grid a{min-height:0}.story-video-section{margin-top:28px!important;padding-top:28px!important}}
+</style>
+<style data-bicc-v6-video-links="1">
+.bicc-matched-video-label{display:flex;flex-direction:column;align-items:flex-start;gap:3px;padding:15px 16px 16px!important}
+.bicc-matched-video-label strong{font-size:15px;color:#173b58;line-height:1.4}
+.bicc-matched-video-label span{font-size:12px;font-weight:700;color:#687784;line-height:1.5}
+.bicc-matched-video-label a{margin-top:7px;color:#0b6f9c;text-decoration:none;font-size:12px;font-weight:900}
+.bicc-matched-video-label a:hover{text-decoration:underline;text-underline-offset:3px}
+.story-video-card{scroll-margin-top:92px}
+</style>
+<style data-bicc-v7-stories-search-flow="1">
+.toolbar{margin-bottom:8px!important}.search-help{margin:8px 2px 12px!important}.count{margin:0 0 22px!important;font-weight:750;color:#536574!important}
+.story-video-section{margin:0 0 46px!important;padding:34px 0 0!important;border-top:1px solid var(--line)!important}.story-video-head{margin-bottom:20px!important}
+.bicc-story-archive-head{margin:42px 0 18px;padding-top:30px;border-top:1px solid var(--line)}.bicc-story-archive-head h2{margin:5px 0 0;font-size:clamp(25px,3.8vw,36px);line-height:1.2;letter-spacing:-.035em}
+#story-videos[hidden]{display:none!important}.bicc-story-archive-head.is-searching{margin-top:8px;padding-top:18px}.bicc-story-archive-head.is-searching .eyebrow{display:none}.bicc-story-archive-head.is-searching h2{font-size:25px}
+@media(max-width:620px){.count{margin-bottom:16px!important}.story-video-section{padding-top:24px!important;margin-bottom:34px!important}.bicc-story-archive-head{margin-top:32px;padding-top:24px}.bicc-story-archive-head.is-searching{margin-top:4px;padding-top:12px}}
+</style>
+<style data-bicc-v8-stories-order="1">
+.bicc-story-archive-head{margin-top:24px!important;padding-top:22px!important}
+.count{margin:8px 0 18px!important}
+.story-video-section{margin:62px 0 6px!important;padding-top:44px!important;border-top:1px solid var(--line)!important}
+.story-video-head{margin-bottom:22px!important}.story-video-head h2{margin-top:5px!important}
+@media(max-width:620px){.bicc-story-archive-head{margin-top:18px!important;padding-top:18px!important}.count{margin:7px 0 15px!important}.story-video-section{margin-top:48px!important;padding-top:34px!important}}
+</style>
+</head>
+<body>
+<header class="site-header"><button id="biccGlobalMenuToggle" type="button" aria-label="전체 메뉴 열기" aria-controls="biccGlobalMenu" aria-expanded="false"><span></span><span></span><span></span></button><div class="wrap head-in">
+<a aria-label='BICC Korea 메인' class='brand bicc-unified-brand' href='/'>BICC <span>KOREA</span></a>
+<nav class="nav"><a href='/'>대학입시 시스템</a><a href='/#results'>대학 진학결과</a><a class='home' href='/'>홈으로</a></nav>
+<nav class="bicc-desktop-nav" aria-label="주요 메뉴"><a href='/campus-toronto'>BICC 소개</a><a href='/admissions'>입학 안내</a><a href='/academics'>OSSD · 과목</a><a href='/fees'>학비 · 비용</a><a href='/results'>대학진학</a><a aria-current='page' class='active' href='/stories'>학생후기</a><a class='consult' href='/#consult'>상담</a></nav></div></header>
+<section class="hero"><div class="wrap">
+<div class="eyebrow">Student Stories</div>
+<h1>학생들이 직접 남긴 이야기</h1>
+<p class="lead">BICC 졸업생들이 직접 남긴 긴 후기를 모았습니다. 학생이 쓴 표현과 말투, 감정, 실수담과 조언을 그대로 읽을 수 있습니다.</p>
+</div></section>
+<main class="section"><div class="wrap">
+<div class="toolbar"><input id="q" type="search" placeholder="대학, 전공, 후기 내용 검색 (예: 토론토 / Toronto / UCL)"></div>
+<p class="search-help"><strong>대학명·전공·학생 후기 본문까지 함께 검색합니다.</strong> 영문과 한글 대학명 모두 검색할 수 있습니다.</p>
+
+
+
+<div class="bicc-story-archive-head" id="biccStoryArchiveTitle"><div class="eyebrow">Student Stories Archive</div>
+<div class="count" id="count"></div><h2>전체 학생 후기</h2></div>
+<div class="grid" id="grid"></div>
+<div class="empty" id="empty" hidden>검색 결과가 없습니다.</div>
+<section class="story-video-section" id="story-videos">
+<div class="story-video-head"><div class="eyebrow">Video Stories</div><h2>동영상 후기</h2><p>김예준·박서연·이건 학생의 BICC 경험과 진학 이야기를 영상으로 확인할 수 있습니다.</p></div>
+<div class="story-video-grid">
+ <article class="story-video-card" id="video-kim-yejun"><div class="story-video-frame"><iframe src="https://www.youtube-nocookie.com/embed/tlzM0c32D3I?rel=0" title="김예준 학생 인터뷰" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="story-video-label bicc-matched-video-label"><strong>김예준 (Brian)</strong><span>UCL Pharmacy · BICC 9개월</span><a href='/story-2026-kim-yejun'>상세 후기 · 합격결과 보기 →</a></div></article>
+ <article class="story-video-card" id="video-park-seoyeon"><div class="story-video-frame"><iframe src="https://www.youtube-nocookie.com/embed/2uY7Qfcspro?rel=0" title="박서연 학생 인터뷰" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="story-video-label bicc-matched-video-label"><strong>박서연</strong><span>CUHK-Shenzhen Clinical Medicine · BICC 약 11개월</span><a href='/story-2026-park-seoyeon'>상세 후기 · 합격결과 보기 →</a></div></article>
+ <article class="story-video-card" id="video-geon-lee"><div class="story-video-frame"><iframe src="https://www.youtube-nocookie.com/embed/p49B5VmNOeY?rel=0" title="이건 학생 인터뷰" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="story-video-label bicc-matched-video-label"><strong>이건</strong><span>UCL Economics · BICC 11개월</span><a href='/story-2026-geon-lee'>상세 후기 · 합격결과 보기 →</a></div></article>
+</div>
+</section>
+
+</div></main>
+<footer class="bicc-tns-footer">
+  <div class="bicc-tns-footer-wrap">
+    <div class="bicc-tns-footer-top">
+      <div class="bicc-tns-footer-brand">
+        <strong>TNS유학 · ㈜티앤에스월드와이드</strong>
+        <p>BICC 한국 학생·학부모 입학 및 진학 상담</p>
+        <div class="bicc-tns-footer-links">
+          <a class="bicc-tns-footer-chip" href="tel:0232881733">전화 상담</a>
+          <a class="bicc-tns-footer-chip" href="https://open.kakao.com/o/slehLvKi" target="_blank" rel="noopener">카카오 상담</a>
+          <a class="bicc-tns-footer-chip" href="mailto:tns@tnsuhak.com">이메일</a>
+        </div>
+      </div>
+      <div class="bicc-tns-footer-block">
+        <strong>서울 본사</strong>
+        <div>서울 강남구 테헤란로 5길 7 KG타워 B1</div>
+        <div>Tel. <a href="tel:0232881733">02-3288-1733~5</a></div>
+        <div>Mobile. <a href="tel:01051500105">010-5150-0105</a></div>
+        <div>Email. <a href="mailto:tns@tnsuhak.com">tns@tnsuhak.com</a></div>
+      </div>
+      <div class="bicc-tns-footer-block">
+        <strong>부산 지사</strong>
+        <div>부산 부산진구 중앙대로 694 쥬디스태화 9층 37호</div>
+        <div>Tel. <a href="tel:01050241733">010-5024-1733</a></div>
+      </div>
+    </div>
+    <div class="bicc-tns-footer-bottom">
+      <span>BICC Korea · Korean information and consultation by TNS Worldwide</span>
+      <span>© TNS유학 · ㈜티앤에스월드와이드</span>
+    </div>
+  </div>
+</footer>
+<script src="data/stories-full.js"></script>
+<script>
+const all=window.BICC_FULL_STORIES||[];
+const grid=document.getElementById('grid'), count=document.getElementById('count'), q=document.getElementById('q'), empty=document.getElementById('empty');
+const esc=s=>String(s||'').replace(/[&<>\"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[m]));
+const norm=s=>String(s||'').toLowerCase().replace(/[’'·.(),-]/g,' ').replace(/\s+/g,' ').trim();
+const aliasGroups=[
+ ['토론토','토론토대','토론토대학교','university of toronto','u of t','uoft','utoronto'],
+ ['워터루','워털루','워털루대','워털루대학교','university of waterloo','waterloo'],
+ ['유비씨','ubc','university of british columbia','브리티시컬럼비아대학교'],
+ ['맥길','mcgill','mcgill university'],['웨스턴','western','western university','웨스턴대학교'],
+ ['퀸즈','queens','queen s','queen s university','퀸즈대학교'],['맥마스터','mcmaster','mcmaster university'],
+ ['요크','york','york university'],['토론토메트로폴리탄','tmu','toronto metropolitan','ryerson','라이어슨'],
+ ['런던정경대','런던정경대학교','lse','london school of economics'],['유씨엘','ucl','university college london'],
+ ['임페리얼','imperial','imperial college london'],['킹스','kcl','king s college london','kings college london','킹스칼리지런던'],
+ ['옥스퍼드','oxford','university of oxford'],['케임브리지','cambridge','university of cambridge'],
+ ['맨체스터','manchester','university of manchester'],['버밍엄','birmingham','university of birmingham'],
+ ['유씨엘에이','ucla','university of california los angeles'],['버클리','uc berkeley','berkeley','university of california berkeley']
+].map(g=>g.map(norm));
+function termsFor(query){
+ const n=norm(query); if(!n)return [];
+ const group=aliasGroups.find(g=>g.some(a=>n===a||n.includes(a)||a.includes(n)));
+ return group||[n];
+}
+function firstMatchInfo(s,terms){
+ const dest=norm(s.destination), body=norm(s.text), excerpt=norm(s.excerpt), name=norm(s.name);
+ const inDest=terms.some(t=>dest.includes(t));
+ const inBody=terms.some(t=>body.includes(t));
+ const inExcerpt=terms.some(t=>excerpt.includes(t));
+ const inName=terms.some(t=>name.includes(t));
+ return {matched:inDest||inBody||inExcerpt||inName};
+}
+function matchSnippet(s,terms){
+ if(!terms.length)return s.excerpt;
+ const raw=String(s.text||''), low=raw.toLowerCase();
+ let best=-1, hit='';
+ for(const t of terms){const i=low.indexOf(t);if(i>=0&&(best<0||i<best)){best=i;hit=t;}}
+ if(best<0)return s.excerpt;
+ const start=Math.max(0,best-90), end=Math.min(raw.length,best+Math.max(hit.length,1)+150);
+ return (start>0?'…':'')+raw.slice(start,end)+(end<raw.length?'…':'');
+}
+function render(){
+ const query=q.value.trim(), terms=termsFor(query);
+ const rows=all.map(s=>({s,m:firstMatchInfo(s,terms)})).filter(x=>!terms.length||x.m.matched);
+ count.textContent=query?`전체 ${all.length}편 중 ${rows.length}편`:`전체 ${all.length}편 · 최근 후기부터 표시`;
+ grid.innerHTML=rows.map(({s})=>`<article class="card"><div class="meta">${esc(s.edition)} · BICC 후기</div><h3>${esc(s.name)}</h3><div class="dest-label">최종 진학</div><div class="dest">${esc(s.destination||'진학 정보 미기재')}</div>${s.duration?`<div class="note">BICC 학업기간 ${esc(s.duration)}</div>`:''}<p class="excerpt">${esc(query?matchSnippet(s,terms):s.excerpt)}</p><a class="read" href="story.html?id=${encodeURIComponent(s.id)}">전체 글 읽기 →</a></article>`).join('');
+ empty.hidden=rows.length!==0;
+}
+q.addEventListener('input',render);render();
+</script>
+<div id="biccGlobalMenuShade" aria-hidden="true"></div><aside id="biccGlobalMenu" aria-label="BICC 전체 메뉴" aria-hidden="true"><div class="bicc-menu-head"><div><div class="bicc-menu-kicker">BICC Korea</div><div class="bicc-menu-title">전체 메뉴</div></div><a class='bicc-menu-home' href='/'>메인 페이지 <span aria-hidden="true">→</span></a></div><nav class="bicc-menu-grid"><section class="bicc-menu-group"><div class="bicc-menu-group-head"><h3>BICC 소개</h3><a class='bicc-menu-mainlink' href='/campus-toronto'>바로가기 →</a></div><a class='bicc-menu-sub' href='/campus-toronto'>학교 · 캠퍼스 · 토론토 생활</a></section><section class="bicc-menu-group"><div class="bicc-menu-group-head"><h3>입학 · OSSD</h3><a class='bicc-menu-mainlink' href='/admissions'>바로가기 →</a></div><a class='bicc-menu-sub' href='/admissions'>입학 안내 · 인정학점</a><a class='bicc-menu-sub' href='/academics'>OSSD 졸업요건 · 과목</a></section><section class="bicc-menu-group"><div class="bicc-menu-group-head"><h3>대학진학</h3><a class='bicc-menu-mainlink' href='/results'>바로가기 →</a></div><a class='bicc-menu-sub' href='/results'>연도별 대학진학 결과</a></section><section class="bicc-menu-group"><div class="bicc-menu-group-head"><h3>학생후기</h3><a class='bicc-menu-mainlink' href='/stories'>바로가기 →</a></div><a aria-current='page' class='bicc-menu-sub active' href='/stories'>전체 학생 후기</a></section><section class="bicc-menu-group"><div class="bicc-menu-group-head"><h3>학비 · 상담</h3><a class='bicc-menu-mainlink' href='/fees'>바로가기 →</a></div><a class='bicc-menu-sub' href='/fees'>학비 · 기타 비용</a><a class='bicc-menu-sub' href='/#consult'>입학 상담</a></section></nav><div class="bicc-menu-foot">BICC 한국어 정보 · 상담 운영 TNS유학</div></aside>
+<script data-bicc-global-menu-js="2">(function(){var root=document.documentElement,btn=document.getElementById('biccGlobalMenuToggle'),drawer=document.getElementById('biccGlobalMenu'),shade=document.getElementById('biccGlobalMenuShade');if(!btn||!drawer||!shade)return;function set(open){root.classList.toggle('bicc-menu-open',open);btn.setAttribute('aria-expanded',open?'true':'false');btn.setAttribute('aria-label',open?'전체 메뉴 닫기':'전체 메뉴 열기');drawer.setAttribute('aria-hidden',open?'false':'true');shade.setAttribute('aria-hidden',open?'false':'true');}btn.addEventListener('click',function(){set(!root.classList.contains('bicc-menu-open'));});shade.addEventListener('click',function(){set(false);});drawer.addEventListener('click',function(e){if(e.target.closest('a'))set(false);});document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});})();</script>
+<script data-bicc-v3-nav-runtime="1">(function(){var n=document.querySelector('.bicc-desktop-nav'),m=window.matchMedia('(min-width:1080px)');if(!n)return;function sync(){n.style.setProperty('display',m.matches?'flex':'none','important')}sync();if(m.addEventListener)m.addEventListener('change',sync);else m.addListener(sync)})();</script><div data-netlify-deploy-id="6aa9f262669bca000733620a" data-netlify-site-id="0959368e-01b7-4568-81cb-2d79e10e4226" data-vcs="github" style="position:fixed">
+  
+  <script async src="/.netlify/scripts/cdp"></script>
+</div>
+</body></html>
