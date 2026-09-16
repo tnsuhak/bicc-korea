@@ -35,6 +35,7 @@ jobs:
             story-2026-geon-lee.html
           )
           for f in "${pages[@]}"; do
+            echo "Downloading page: $f"
             curl --fail --silent --show-error --location "$BASE/$f" -o "$f"
           done
 
@@ -45,11 +46,8 @@ jobs:
             campus-reception.webp
           )
           for f in "${assets[@]}"; do
+            echo "Downloading asset: $f"
             curl --fail --silent --show-error --location "$BASE/assets/$f" -o "assets/$f"
-          done
-
-          for f in favicon.svg robots.txt sitemap.xml; do
-            curl --fail --silent --show-error --location "$BASE/$f" -o "$f"
           done
 
       - name: Convert preview output to clean production source
@@ -71,6 +69,9 @@ jobs:
               s = re.sub(r'<meta[^>]+name=["\']robots["\'][^>]*>', '', s, flags=re.I)
               p.write_text(s, encoding='utf-8')
 
+          Path('favicon.svg').write_text('''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#f5c400"/><path d="M32 8 56 32 32 56 8 32Z" fill="#f5c400"/><text x="32" y="38" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#fff">TNS</text></svg>''', encoding='utf-8')
+          Path('robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: https://bicc-korea.netlify.app/sitemap.xml\n', encoding='utf-8')
+          Path('sitemap.xml').write_text('''<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>https://bicc-korea.netlify.app/</loc></url>\n  <url><loc>https://bicc-korea.netlify.app/admissions.html</loc></url>\n  <url><loc>https://bicc-korea.netlify.app/academics.html</loc></url>\n  <url><loc>https://bicc-korea.netlify.app/fees.html</loc></url>\n  <url><loc>https://bicc-korea.netlify.app/results.html</loc></url>\n  <url><loc>https://bicc-korea.netlify.app/stories.html</loc></url>\n  <url><loc>https://bicc-korea.netlify.app/campus-toronto.html</loc></url>\n  <url><loc>https://bicc-korea.netlify.app/story-2026-kim-yejun.html</loc></url>\n  <url><loc>https://bicc-korea.netlify.app/story-2026-park-seoyeon.html</loc></url>\n  <url><loc>https://bicc-korea.netlify.app/story-2026-geon-lee.html</loc></url>\n</urlset>\n''', encoding='utf-8')
           Path('netlify.toml').write_text('[build]\n  publish = "."\n', encoding='utf-8')
           Path('README.md').write_text(
               '# BICC Korea\n\n'
